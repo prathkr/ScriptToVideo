@@ -32,7 +32,7 @@ OUTPUT_RETENTION_SECONDS = 30 * 60
 
 
 def load_profiles() -> dict:
-    raw = local_storage.getItem(STORAGE_KEY, key="ls_get_profiles")
+    raw = local_storage.getItem(STORAGE_KEY)
     try:
         data = json.loads(raw) if raw else {}
         return data if isinstance(data, dict) else {}
