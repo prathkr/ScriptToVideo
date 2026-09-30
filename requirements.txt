@@ -1,0 +1,5 @@
+streamlit
+streamlit-local-storage
+PyYAML
+requests
+pydub
