@@ -2,7 +2,7 @@ import re
 
 from typing import Dict, Iterable, List
 
-PLACEHOLDER_PATTERN = re.compile(r"**\\{**([a-zA-Z0-9\_]+)**\\}")
+PLACEHOLDER_PATTERN = re.compile(r"\{([a-zA-Z0-9_]+)\}")
 
 
 def extract_placeholders(scripts: Iterable[str]) -> List[str]:
