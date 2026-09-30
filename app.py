@@ -412,7 +412,7 @@ def main() -> None:
     ):
         clear_generated_download()
 
-    st.title("Script → Voice → B-roll video generator")
+    st.title("Script → Video")
 
     settings = render_sidebar()
 
